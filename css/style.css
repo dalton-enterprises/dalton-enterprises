@@ -514,10 +514,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -526,10 +526,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -5903,4 +5903,11 @@ td.visible-print {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+a[href^="tel:"]:before {
+  content: "\260E";
+  display: block;
+  color: red;
+  font-size: 1.2em;
 }
