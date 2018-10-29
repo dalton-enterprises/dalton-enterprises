@@ -5911,3 +5911,9 @@ a[href^="tel:"]:before {
   color: red;
   font-size: 1.2em;
 }
+a[href^="mailto:"]:hover:after {
+  content: attr(title);
+  display: block;
+  color: red;
+  font-size: 1.2em;
+}
