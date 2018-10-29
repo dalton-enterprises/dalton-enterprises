@@ -5905,15 +5905,22 @@ td.visible-print {
 	margin-left: auto;
 }
 
-a[href^="tel:"]:before {
-  content: "\260E";
-  display: block;
+.contact {
   color: red;
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
-a[href^="mailto:"]:hover:after {
-  content: attr(title);
-  display: block;
+
+a[href^="tel:"]:before {
+  content: "\260F"" ";
   color: red;
-  font-size: 1.2em;
+  font-size: 1.25em;
+}
+a[href^="mailto:"]:before {
+  content: "\2709"" ";
+  color: red;
+  font-size: 1.25em;
+}
+
+a[href^="mailto:"]:hover:after {
+  content: " > " attr(title);
 }
